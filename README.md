@@ -1,3 +1,34 @@
+# Notes
+
+## Assumptions:
+
+- Respecting only current browser versions.
+- Went with Intl.NumberFormat to ensure internationalization. ($9.99 instead of 9.99 USD)
+- Used Stitches and its token system.
+- Used Radix for UI primitives.
+- Used SWR do improve data fetching performance. Should be possible to change the dashboard data upon onChange instead of a click on 'Generate report'.
+
+## Caveats:
+
+- Diagram should have a legend.
+- Instead of showing the gateway/project ids the actual names should be displayed.
+- No tests.
+- Used HTML5 date picker instead of individual component.
+
+GET /users
+Returns all the users in the system
+
+GET /projects
+Returns all the projects in the system
+
+GET /gateways
+Returns all the gateways in the system
+
+POST /report
+Returns all the payments after applying the given filters
+
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
